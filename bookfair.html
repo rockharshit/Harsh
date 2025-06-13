@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    body{ margin: 0;
+    box-sizing: border-box;
+    /* background-color: gainsboro; */
+}
+
+.head1{ background-color: gainsboro;
+    height: 60px;
+display: flex;
+justify-content: space-between;
+
+
+}
+#search{
+  background-image: url(https://img.icons8.com/ios7/600/search.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: left;
+    /* padding: 5px;  */
+    border-radius: 8px;
+    
+}
+#search:hover{border-color: blue; 
+  width: 200px;
+  height: 30px;
+  box-shadow: 3px 3px 3px;
+}
+
+#div1{align-content: center;
+padding-left: 8px;
+word-spacing: 20px;
+}
+#div2{align-content: center;
+padding-right: 26px;
+
+}
+  #account{
+    padding-right: 20px;
+  } 
+
+  #head2{
+    background-color: gainsboro;
+    height: 100px;
+    position: sticky;
+    top: 0%;
+    justify-content: space-between;
+    z-index: 3;
+  }
+  #head2,p{ margin: 0%;
+    font-size: 35px;
+     font-family:'Times New Roman', Times, serif;
+     display: flex;
+    padding-left: 8px;
+    align-items: center;
+  
+    
+  }
+  hr{ margin: 0;}
+  #unorderli{
+   list-style-type: none;
+   display: flex;
+   gap: 20px;
+   font-size: 22px;
+   padding-right: 26px;
+   /* opacity: 0.5; */
+   color: rgb(118, 118, 118);
+  }
+  #home{
+    color: coral;
+  }
+#pagedrop{cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+#pageul{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 4px 4px 4px ;
+    background-color:whitesmoke;
+    color: black;
+    /* opacity: 1 !important; */
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+   }
+   #drop{
+    padding: 10px;
+    font-weight: 100;
+   }
+   #drop:hover {color:coral;}
+#pagedrop:hover #pageul{
+    display: block;
+}
+#pagedrop:hover{
+  font-size: 25px;
+}
+
+#div3{
+  display: flex;
+  align-items: center;
+  }
+  #book{ padding: 60px;}
+  #buybtn{margin-left: 140px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #buybtn:hover{ background-color: rgb(65, 186, 65);
+  color: white;}
+  #freedom{
+  font-size: 35px;  
+  }
+  #explain{
+    font-size: 25px;
+    color: rgb(81, 81, 81);
+    text-align: center;
+  }
+  #readbtn{ float:right;
+  margin-right: 20px;
+  height: 25px;
+  color:coral;
+  cursor: pointer;
+  border-radius: 5px;
+  }
+  #readbtn:hover{ color: blue;
+  box-shadow: 3px 3px 3px;
+border-color: blue;}
+#div4{
+  display:flex;
+  justify-content: space-around;
+}
+#div5{
+  text-align: center;
+  background-color: rgb(240, 236, 236);
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#quote1{
+  font-size:40px;
+  margin:50px 0 0 0;
+  
+}
+#line{margin:0 0 30px 400px ;
+color: coral;}
+
+#quote{width: 600px;
+  margin-left: 350px;
+}
+#div6{
+
+}
+#quality{
+  font-size: 18px;
+  color: rgb(141, 139, 139) ;
+  display: flex;
+  justify-content: center;
+
+}
+#featured1{
+  display:flex;
+  justify-content: center;
+}
+#line1{
+  color: rgb(147, 144, 144);
+}
+#featured{
+  font-size: 30px;
+}
+#div7{
+  display: flex;
+  justify-content: space-around;
+  padding-left: 60px;
+}
+#img1{width: 20%;
+display: flex;
+flex-direction: column;
+justify-content: center;}
+#img2{width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;}
+#img3{width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;}
+#img4{width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;}
+
+#imgp{ font-size: 24px; 
+  color: rgb(134, 123, 61);
+}
+
+#writer{ font-size: 18px;
+  color: rgb(126, 111, 111);
+}
+#container{
+  position: relative;
+  display: inline-block;
+width: 150px;
+}
+
+#imgdrop{cursor: pointer;
+  display: flex;
+  position: relative;
+}
+  
+
+#cart{color: white;
+  font-size: 15px;
+  background-color: black ;
+ width: 100px;
+ text-align: center;
+ margin-left: 14px;
+ position: absolute;
+ display: none;
+ z-index: 1;
+ cursor: pointer;
+}
+#container:hover #cart{
+  display: block;
+}
+#cart:hover{background-color: green;}
+#div8{
+    display: flex;
+    text-align: center;
+    
+}
+#discribe1{ width: 28%;
+margin: 25px;
+text-align: center;
+
+}
+#discribea{
+  font-size:25px ;
+  line-height: 1.3;
+}
+#discribc{
+  margin-left: 75px;
+}
+#discribe2{ width: 18%;
+font-size: 18px;
+line-height: 2;
+}
+#discribe3{ width: 18%;
+font-size: 18px;
+line-height: 2;}
+#discribe4{ width: 18%;
+font-size: 18px;
+line-height: 2;}
+#discribe5{ width: 18%;
+font-size: 18px;
+line-height: 2;
+}
+
+ul{
+  list-style: none;
+  font-size: 20px;
+}
+#reserved{
+  font-size: 20px;
+ padding-top:40px ;
+}
+#footer{
+  height: 100px;
+}
+</style>
+<body> 
+    <header class="head1">
+       <div id="div1">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="facebook" width="20px">
+        <img src="https://freepnglogo.com/images/all_img/1725374683twitter-x-logo.png" alt="x" width="20px">
+        <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzLW5lb24tMDAzLnBuZw.png" alt="instagram" width="20px">
+     </div>
+      <div id="div2">
+         <img src="https://png.pngtree.com/png-vector/20190420/ourmid/pngtree-vector-business-man-icon-png-image_966609.jpg" alt="men" width="20px">
+        <span id="account">Account</span>
+        <input type="search" name="" id="search" >
+    </div> 
+
+</header><hr>
+   <header id="head2">
+        
+    <p>
+         <b style="font-size: 45px; font-family :'Lucida Sans', 'Lucida Sans Regular !important' , 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">BOOK</b>fair
+
+    </p>
+<ul id="unorderli">
+    <li id="home">Home</li>
+    <li id="pagedrop">
+        Pages
+        <ul id="pageul">
+          <b>  <li id="drop">Home</li>
+            <li id="drop">About</li>
+            <li id="drop">Blog</li>
+            <li id="drop">Styles</li>
+            <li id="drop">Our Store</li>
+            <li id="drop">Contect</li>
+            <li id="drop">ThankYou</li> </b>
+        </ul>
+    </li>
+    <li>Features</li>
+    <li>Popular</li>
+    <li>Offer</li>
+    <li>Article</li>
+    <li>Download App</li>
+</ul>
+</header><hr>
+  <section>
+    <div id="div3">
+     <div id="book">
+      <img src="https://static01.nyt.com/images/2024/06/30/books/books-additional-skewsksk-slide-AR7D/books-additional-skewsksk-slide-AR7D-articleLarge.png" alt="Frederick Douglass: Prophet of Freedom" width="500px"> 
+      <button id="buybtn">Buy:10$</button>
+     </div>
+     <div id="booktext">
+     <h1 id="freedom">Frederick Douglass: Prophet of Freedom</h1>
+     <p id="explain">There can be no right of speech where any man, however, lifted up, or however humble, however young, or however old, is overawed by force, and compelled to suppress his honest sentiments.</p><br><br>
+     <button id="readbtn"> <b>Read More </b>—→</button>
+     </div>
+    </div>
+  </section><br><br><hr><br><br>
+
+  <div id="div4">
+    <img src="https://png.pngtree.com/png-clipart/20200710/original/pngtree-books-logo-png-image_4135424.jpg" alt="" width="200px">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYp-dKLlqPV0pcKyX0qo92rCSvXcNLoRMt2A&s" alt="" width="100px" >
+    <img src="https://cdn.dribbble.com/userupload/31660118/file/original-0f94c66c6ed56edbbfff468b5240fe5f.png?format=webp&resize=400x300&vertical=center"alt="" width="200px">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIlXL5-5wd_vSb45HN1rMvbgrXmg9-HCnbZA&s" alt="" width="200px" height="150px">
+    <img src="https://i.pinimg.com/474x/18/18/88/18188820e5da19a3908aeb18af5246b5.jpg" alt="" width="250px">
+  </div><br><br><hr>
+  <div id="div5">
+    <h2 id="quote1">Quote of the day</h2>
+    <P id="line">————————————</P>
+    <div id="quote">
+    <p>“The more that you read, the more things you will know. The more that you learn, the more places you’ll go.”</p><br><br>
+    <P style=" font-size: 25px; padding-left: 180px; color: coral;">-ROCKHARSH</P>
+  </div>
+  </div><br><br><br>
+  <div id="div6">
+    <p id="quality">Some quality items</p>
+  <div id="featured1"><p id="line1">————</p><h2 id="featured">Featured Books</h2><p id="line1">————</p></div> 
+  </div> <br><br><br><br>
+  <div id="div7">
+    <div id="img1">
+      <div id="container">
+      <img id="imgdrop" src="https://i.pinimg.com/474x/8a/04/ed/8a04ed1684c427daeed111a6d5964249.jpg" alt="" width="145px">
+      <p id="cart">Add To Cart</p></div><br>
+      <p id="imgp">The Old Man And The Sea</p><br>
+      <p  id="writer">-Hemingwy</p><br>
+      <p id="imgp">$ 55.00</p>
+    </div>
+    <div id="img2">
+      <div id="container">
+        <img id="imgdrop" src="https://cdn.pastemagazine.com/www/articles/2019/12/06/dunebbc19final.jpg" alt="" width="150px">
+      <p id="cart">Add To Cart</p>
+    </div><br>
+    <p id="imgp">Dune</p><br>
+    <p id="writer">-Frank Herbert</p><br>
+    <p id="imgp">$ 49.00</p>
+    </div>
+    <div id="img3"> <div id="container"><img id="imgdrop"src="https://i.pinimg.com/474x/0d/f9/0f/0df90fb803aff4d8e757046305791b6a.jpg" alt="" width="155px">
+      <p id="cart">Add To Cart</p></div><br>
+    <p id="imgp">The Road</p>
+    <br>
+    <p id="writer">-Cormac MeCarthy</p><br>
+    <p id="imgp">$ 39.00</p>
+    </div>
+    <div id="img4">
+      <div id="container"><img id="imgdrop"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm332tBpFRDrqOeB35SkCj3cBaS9J_chEp1g&s" alt="" width="140px">
+      <p id="cart">Add To Cart</p></div><br>
+   <p id="imgp">Die Verdendlung</p><br>
+   <p id="writer">-Franz Kafka</p><br>
+   <p id="imgp">$ 51.00</p>
+    </div>
+  </div><br><br><br><br><hr><br><br><br><br>
+
+    <div id="div8">
+       
+       <div id="discribe1"> <p id="discribc">
+            <b style="font-size: 45px; font-family :'Lucida Sans', 'Lucida Sans Regular !important' , 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">BOOK</b>fair
+       </p><br>
+       <p id="discribea">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eaque, architecto quos eveniet veritatis nesciunt ipsam laboriosam minus provident sapiente unde distinctio omnis veniam vitae, porro cum dolor qui impedit.</p>
+    </div>
+    <div id="discribe2">
+        <h2>About Us</h2>
+        <ul>
+            <li>vision</li>
+            <li>articles</li>
+            <li> careers</li>
+            <li>service terms</li>
+            <li>donate</li>
+        </ul>
+     </div>
+     <div id="discribe3"> <h2>Advanced Search</h2>
+     <ul>
+        <li>Subjects</li>
+        <li>Authors</li>
+        <li> Books</li>
+        <li>Home</li>
+        <li>Discovere</li>
+     </ul></div>
+     <div id="discribe4"> <h2>My account</h2>
+        <ul>
+           <li>Sign In</li>
+           <li>View Cart</li>
+           <li> My Wishtlist</li>
+           <li>Track My Order</li>
+           
+        </ul></div>
+        <div id="discribe5"> <h2>Help</h2>
+            <ul>
+               <li>Help center</li>
+               <li>Report a problem</li>
+               <li> Suggesting edits</li>
+               <li>Contact us</li>
+              
+            </ul></div>
+</div><br><br><br><hr>
+<footer id="footer">
+<p id="reserved">
+  © 2022 All rights reserved. by Harshit Parashar.
+</p>
+
+</footer>
+</body>
+</html>
